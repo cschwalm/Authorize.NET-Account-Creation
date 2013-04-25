@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^signup/?$ https://%{HTTP_HOST}/automatic_account_creation/payment_form.php [NC,L]
+RewriteRule ^signup/(.*)$ /automatic_account_creation/$1 [NC,L]
+RewriteRule ^aacc_images/(.*)$ /automatic_account_creation/aacc_images/$1 [NC,L]
+RewriteRule ^aacc_js/(.*)$ /automatic_account_creation/aacc_js/$1 [NC,L]
+RewriteRule ^aacc_css/(.*)$ /automatic_account_creation/aacc_css/$1 [NC,L]
+RewriteRule ^aacc_admin/?$ /automatic_account_creation/admin/index.php [NC,L]

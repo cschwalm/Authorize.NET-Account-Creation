@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+#AuthType Basic
+#AuthName "Administration Control Panel"
+#AuthUserFile #######/automatic_account_creation/admin/.htpasswd
+#Require valid-user
